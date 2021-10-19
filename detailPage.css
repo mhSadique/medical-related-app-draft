@@ -1,0 +1,256 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dosis&display=swap");
+
+/* Globals */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+button {
+  border: none;
+  padding: 12px 38px;
+  background-color: #014b75;
+  color: white;
+  font-size: 20px;
+  border-radius: 7px;
+  font-weight: bold;
+}
+
+/* Top header*/
+header {
+  background-color: #003b5c;
+}
+
+.header-container {
+  margin: 0 auto;
+  width: 90%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+header .header-links a,
+header .header-right-info a {
+  color: #d0cdc3;
+  font-size: 18px;
+  text-decoration: none;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+header .header-links a:first-child,
+header .header-right-info a:first-child {
+  margin-left: 0;
+}
+
+header .header-links a:last-child,
+header .header-right-info a:last-child {
+  margin-right: 0;
+}
+
+header .header-right-info a {
+  color: #f6f4ee;
+}
+
+/* Navbar */
+.nav-container {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  padding: 20px 0;
+}
+
+.nav-container .logo {
+  width: 20%;
+  font-size: 45px;
+}
+
+.nav-container .logo .first {
+  color: #003b5c;
+  font-family: "Roboto", sans-serif;
+}
+
+.nav-container .logo .second {
+  color: rgb(85, 139, 4);
+  font-family: "Lobster", cursive;
+}
+
+.nav-container .nav-info {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-container .nav-link a {
+  text-decoration: none;
+  font-size: 25px;
+  margin-right: 20px;
+  color: black;
+}
+
+.nav-container .nav-link a:hover {
+  color: rgba(0, 0, 0, 0.719);
+}
+
+.nav-container .nav-link a:last-child {
+  margin-right: 0;
+}
+
+.nav-container .nav-link a:hover {
+  border-bottom: 1px solid;
+}
+
+.nav-container .profile-info a {
+  text-decoration: none;
+  font-size: 18px;
+  margin-right: 10px;
+  color: black;
+}
+
+.nav-container .profile-info a:hover {
+  color: rgba(0, 0, 0, 0.719);
+}
+
+.nav-container .profile-info span {
+  font-size: 18px;
+  margin-right: 10px;
+  background-color: #003b5c;
+  color: #fff;
+  padding: 4px 10px 5px;
+  border-radius: 20px;
+}
+
+.nav-container .profile-info img {
+  width: 30px;
+  border-radius: 50px;
+}
+
+/* Single topic banner */
+
+.banner-single {
+  background-image: linear-gradient(#003b5c, #2774ae);
+  color: white;
+  padding: 100px 0;
+}
+
+.banner-single .banner-container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.banner-single .banner-container .text-container {
+  width: 60%;
+}
+
+.banner-single .banner-container h2 {
+  font-size: 50px;
+  font-family: "Dosis", sans-serif;
+  margin-bottom: 20px;
+}
+
+.banner-single .banner-container p {
+  font-size: 30px;
+  margin-bottom: 20px;
+  line-height: 40px;
+}
+
+/* Single topic details */
+
+.single-topic {
+  background-color: whitesmoke;
+  padding: 50px 0;
+}
+
+.single-topic-detail-container {
+  width: 90%;
+  color: #2e2e2e;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2.5fr 1fr;
+}
+
+.single-topic-detail {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.single-topic-detail .image img {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.single-topic-detail .text {
+  padding: 20px 30px;
+}
+
+.single-topic-detail .text h3 {
+  font-size: 60px;
+  font-family: "Dosis", sans-serif;
+  margin-bottom: 30px;
+}
+
+.single-topic-detail .text P {
+  font-size: 22px;
+  line-height: 30px;
+}
+
+.single-topic-detail-container .useful-links {
+  display: flex;
+  flex-direction: column;
+}
+
+.single-topic-detail-container .useful-links h4 {
+  font-size: 40px;
+  font-family: "Dosis", sans-serif;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.single-topic-detail-container .useful-links a {
+  font-size: 22px;
+  color: #2774ae;
+  text-decoration: none;
+  border-bottom: 1px solid #c8c9c7;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.single-topic-detail-container .useful-links a:last-child {
+  border-bottom: none;
+}
+
+@media screen and (max-width: 767px) {
+  /* Single topic banner */
+  .banner-single .banner-container .text-container {
+    width: 100%;
+  }
+
+  .banner-single .banner-container p {
+    font-size: 25px;
+  }
+
+  /* Single topic details */
+
+  .single-topic-detail-container {
+    grid-template-columns: 1fr;
+  }
+
+  .single-topic-detail {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .single-topic-detail .text {
+    padding: 5px 10px;
+  }
+}
