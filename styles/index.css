@@ -1,0 +1,673 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dosis&display=swap");
+
+/* Globals */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+button {
+  border: none;
+  padding: 12px 38px;
+  background-color: #014b75;
+  color: white;
+  font-size: 20px;
+  border-radius: 7px;
+  font-weight: bold;
+}
+
+/* Top header*/
+header {
+  background-color: #003b5c;
+}
+
+.header-container {
+  margin: 0 auto;
+  width: 90%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+header .header-links a,
+header .header-right-info a {
+  color: #d0cdc3;
+  font-size: 18px;
+  text-decoration: none;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+header .header-links a:first-child,
+header .header-right-info a:first-child {
+  margin-left: 0;
+}
+
+header .header-links a:last-child,
+header .header-right-info a:last-child {
+  margin-right: 0;
+}
+
+header .header-right-info a {
+  color: #f6f4ee;
+}
+
+/* Navbar */
+.nav-container {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  padding: 20px 0;
+}
+
+.nav-container .logo {
+  width: 20%;
+  font-size: 45px;
+}
+
+.nav-container .logo .first {
+  color: #003b5c;
+  font-family: "Roboto", sans-serif;
+}
+
+.nav-container .logo .second {
+  color: rgb(85, 139, 4);
+  font-family: "Lobster", cursive;
+}
+
+.nav-container .nav-info {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-container .nav-link a {
+  text-decoration: none;
+  font-size: 25px;
+  margin-right: 20px;
+  color: black;
+}
+
+.nav-container .nav-link a:hover {
+  color: rgba(0, 0, 0, 0.719);
+}
+
+.nav-container .nav-link a:last-child {
+  margin-right: 0;
+}
+
+.nav-container .nav-link a:hover {
+  border-bottom: 1px solid;
+}
+
+.nav-container .profile-info a {
+  text-decoration: none;
+  font-size: 18px;
+  margin-right: 10px;
+  color: black;
+}
+
+.nav-container .profile-info a:hover {
+  color: rgba(0, 0, 0, 0.719);
+}
+
+.nav-container .profile-info span {
+  font-size: 18px;
+  margin-right: 10px;
+  background-color: #003b5c;
+  color: #fff;
+  padding: 4px 10px 5px;
+  border-radius: 20px;
+}
+
+.nav-container .profile-info img {
+  width: 30px;
+  border-radius: 50px;
+}
+
+/* Top Banner */
+.top-banner {
+  background-color: #f6f4ee;
+}
+
+.top-banner .top-banner-container {
+  width: 75%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.top-banner-container h2 {
+  font-family: "Dosis", sans-serif;
+  font-size: 65px;
+  margin: 50px 0;
+}
+
+.top-banner-container .banner-btn {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.top-banner-container .banner-btn button:last-child {
+  background-color: #ffc72c;
+  color: #003b5c;
+}
+
+.top-banner-container .search input {
+  width: 1010px;
+  padding: 30px 30px;
+  border: none;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 50px;
+}
+
+/* Branding */
+
+.branding {
+  background-image: linear-gradient(#5da2a3, #045889);
+  padding: 100px 0;
+}
+.branding-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+  color: white;
+}
+
+.branding-container .text {
+  width: 50%;
+}
+
+.branding-container .text h2 {
+  font-size: 52px;
+}
+
+.branding-container .text .big-para {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.branding-container .text .small-para {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.branding-container .text button {
+  background-color: white;
+  color: #0b5e8b;
+}
+
+.branding-container .image {
+  width: 50%;
+}
+
+.branding-container .image img {
+  width: 100%;
+}
+
+/* Video visit */
+.video-visit {
+  background-color: #f6f4ee;
+}
+.video-visit-container {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px 0;
+}
+
+.video-visit-container .image {
+  width: 50%;
+  padding-right: 30px;
+}
+
+.video-visit-container .text {
+  width: 50%;
+  padding-left: 30px;
+}
+
+.video-visit-container .text h3 {
+  font-size: 50px;
+  font-family: "Dosis", sans-serif;
+  margin-bottom: 30px;
+}
+
+.video-visit-container .image img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* General Services */
+.general-services {
+  padding: 100px 0;
+  background-color: ghostwhite;
+}
+
+.general-services-container {
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.general-services h3 {
+  width: 90%;
+  margin: 0 auto;
+  font-size: 40px;
+  font-family: "Dosis", sans-serif;
+  margin-bottom: 30px;
+}
+
+.general-services-container .service {
+  background-color: white;
+  box-shadow: 1px 1px 50px 10px rgba(128, 128, 128, 0.37);
+  border-radius: 10px;
+}
+
+.general-services-container .service img {
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.general-services-container .service h4 {
+  font-family: "Dosis", sans-serif;
+  font-size: 35px;
+  margin-bottom: 25px;
+  padding: 0 15px;
+}
+
+.general-services-container .service p {
+  font-size: 20px;
+  margin-bottom: 25px;
+  padding: 0 15px;
+  line-height: 25px;
+}
+
+.general-services-container .service button {
+  background-color: white;
+  color: #2774ae;
+  padding-left: 15px;
+  margin-bottom: 20px;
+}
+
+/* Cancer Services */
+.cancer-services {
+  background-color: #f6f4ee;
+  padding: 80px 0;
+}
+
+.cancer-services h3 {
+  width: 90%;
+  margin: 0 auto;
+  font-family: "Dosis", sans-serif;
+  font-size: 35px;
+  margin-bottom: 30px;
+}
+
+.cancer-services-container {
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 30px;
+  row-gap: 20px;
+}
+
+.cancer-services-container .service {
+  background-color: white;
+  padding: 30px 50px;
+  border-radius: 5px;
+}
+
+.cancer-services-container .service a {
+  text-decoration: none;
+  font-size: 22px;
+  color: #003b5c;
+}
+
+/* Specialty Services */
+.specialty-services {
+  background-color: #fff;
+  padding: 80px 0;
+}
+
+.specialty-services h3 {
+  width: 90%;
+  margin: 0 auto;
+  font-family: "Dosis", sans-serif;
+  font-size: 35px;
+  margin-bottom: 30px;
+}
+
+.specialty-services-container {
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 30px;
+  row-gap: 20px;
+}
+
+.specialty-services-container .service {
+  background-color: whitesmoke;
+  padding: 30px 50px;
+  border-radius: 5px;
+}
+
+.specialty-services-container .service a {
+  text-decoration: none;
+  font-size: 22px;
+  color: #003b5c;
+}
+
+/* Footer */
+footer {
+  background-image: linear-gradient(#00273d, #0b4d74);
+  display: flex;
+  flex-direction: column;
+  padding: 100px 0 50px;
+}
+
+footer .container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+footer * {
+  color: #f6f4ee;
+}
+
+footer .upper-portion {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-bottom: 20px;
+}
+
+footer .upper-portion .international .info p {
+  font-size: 21px;
+  margin-bottom: 10px;
+}
+
+footer .upper-portion .international .languages {
+  display: flex;
+  flex-direction: column;
+}
+
+footer .upper-portion .international .languages a {
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+
+footer .upper-portion .patients {
+  display: flex;
+  flex-direction: column;
+}
+
+footer .upper-portion .patients p {
+  font-size: 21px;
+  margin-bottom: 10px;
+}
+
+footer .upper-portion .patients a {
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+
+footer .upper-portion .get-involved {
+  display: flex;
+  flex-direction: column;
+}
+
+footer .upper-portion .get-involved p {
+  font-size: 21px;
+  margin-bottom: 10px;
+}
+
+footer .upper-portion .get-involved a {
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+
+footer .upper-portion .uni-health {
+  display: flex;
+  flex-direction: column;
+}
+
+footer .upper-portion .uni-health p {
+  font-size: 21px;
+  margin-bottom: 10px;
+}
+
+footer .upper-portion .uni-health a {
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+
+footer .lower-portion {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .lower-portion .left a {
+  margin-bottom: 10px;
+  margin-right: 20px;
+  text-decoration: none;
+}
+
+footer .lower-portion .right a {
+  margin-bottom: 10px;
+  margin-right: 20px;
+  text-decoration: none;
+}
+
+/* Media Queries */
+@media screen and (max-width: 767px) {
+  /* Top header */
+  .header-links {
+    display: none;
+  }
+
+  header .header-right-info {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  header .header-right-info a {
+    font-size: 14px;
+  }
+
+  /* Navbar */
+
+  .nav-container {
+    flex-direction: column;
+  }
+
+  .nav-container .logo {
+    width: 100%;
+    font-size: 45px;
+  }
+
+  .nav-container .nav-info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .nav-container .nav-link a {
+    margin-top: 10px;
+    font-size: 20px;
+  }
+
+  .nav-container .nav-link a:last-child {
+    margin-bottom: 10px;
+  }
+
+  .nav-container .nav-link {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+
+  .nav-container .profile-info a {
+    font-size: 14px;
+  }
+
+  .nav-container .profile-info span {
+    font-size: 14px;
+  }
+
+  .nav-container .profile-info img {
+    display: none;
+  }
+
+  /* Top banner */
+  .top-banner .top-banner-container {
+    width: 90%;
+  }
+
+  .top-banner-container h2 {
+    font-size: 45px;
+    margin: 20px 0;
+  }
+
+  .top-banner-container .banner-btn {
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .top-banner-container .banner-btn button {
+    margin: 5px;
+  }
+
+  .top-banner-container .search input {
+    width: 300px;
+    padding: 20px 20px;
+    font-size: 16px;
+  }
+
+  /* Branding */
+
+  .branding-container {
+    text-align: center;
+  }
+
+  .branding-container .text {
+    width: 90%;
+  }
+
+  .branding-container .image {
+    display: none;
+  }
+
+  /* Video visit */
+  .video-visit-container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 0;
+    flex-direction: column;
+  }
+
+  .video-visit-container .image {
+    width: 100%;
+    padding-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .video-visit-container .text {
+    width: 100%;
+    padding-left: 0;
+  }
+
+  .video-visit-container .text h3 {
+    font-size: 40px;
+  }
+
+  .video-visit-container .text button {
+    width: 100%;
+  }
+
+  /* General services */
+
+  .general-services-container {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 1fr;
+  }
+
+  .general-services-container .service {
+    text-align: center;
+  }
+
+  /* Cancer Services */
+
+  .cancer-services-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cancer-services-container .service {
+    padding: 15px 25px;
+  }
+
+  /* specialty Services */
+
+  .specialty-services-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .specialty-services-container .service {
+    padding: 15px 25px;
+  }
+
+  /* Footer */
+
+  footer .upper-portion {
+    grid-template-columns: 1fr;
+  }
+
+  footer .upper-portion .international,
+  footer .upper-portion .patients,
+  footer .upper-portion .get-involved {
+    margin-bottom: 30px;
+  }
+
+  footer .lower-portion {
+      flex-direction: column;
+  }
+
+  footer .lower-portion .left{
+      margin-bottom: 20px;
+  }
+
+  footer .lower-portion .right{
+      line-height: 30px;
+  }
+
+}
